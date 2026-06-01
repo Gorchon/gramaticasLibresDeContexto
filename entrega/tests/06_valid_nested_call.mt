@@ -1,0 +1,4 @@
+@triton.jit
+def h(x): {
+  y = foo(x, 1, (2 + 3));
+}

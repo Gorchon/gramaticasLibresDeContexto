@@ -1,0 +1,4 @@
+@triton.jit
+def one(x): {
+  y = (x + 1) * 2;
+}

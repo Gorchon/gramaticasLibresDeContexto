@@ -1,0 +1,4 @@
+@triton.jit
+def g(x): {
+  tl.load(x);
+}
