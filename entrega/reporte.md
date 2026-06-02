@@ -554,6 +554,30 @@ En: linea 3, columna 10
 
 Los 13 casos producen el resultado esperado. Los programas válidos generan su AST completo, y los programas inválidos reportan un mensaje de error con la posición exacta del problema.
 
+### 6.4 Evidencia de ejecución automatizada (corrida completa)
+
+Para validar de forma rápida y reproducible todos los archivos de `tests/`, se ejecutó una corrida automática que imprime la primera línea del resultado por caso (`VALIDO` o `INVALIDO`).
+
+**Salida obtenida:**
+
+```
+01_valid_simple_add.mt | VALIDO
+02_valid_full_kernel.mt | VALIDO
+03_valid_precedence.mt | VALIDO
+04_valid_multi_params.mt | VALIDO
+05_valid_expr_stmt.mt | VALIDO
+06_valid_nested_call.mt | VALIDO
+07_valid_annotation.mt | VALIDO
+08_invalid_no_decorator.mt | INVALIDO
+09_invalid_no_braces.mt | INVALIDO
+10_invalid_no_semicolon.mt | INVALIDO
+11_invalid_incomplete_expr.mt | INVALIDO
+12_invalid_kwargs.mt | INVALIDO
+13_invalid_if_statement.mt | INVALIDO
+```
+
+Esta evidencia confirma que el comportamiento observado coincide con lo esperado en los 13 casos definidos.
+
 ---
 
 ## 7. Instrucciones de ejecución
